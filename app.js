@@ -166,7 +166,7 @@ var render = function(){
 		orbitors.forEach((o)=>{
 			ctx.beginPath();
 			ctx.moveTo(o.x, o.y);
-			ctx.ellipse(o.x, o.y, o.d,o.d, 0, 360 * (Math.PI / 180), 0, false);
+			//ctx.ellipse(o.x, o.y, o.d,o.d, 0, 360 * (Math.PI / 180), 0, false);
 			ctx.fillRect(o.x - (o.d/2), o.y -(o.d/2), o.d, o.d);
 			//ctx.fillStyle = "rgba(0,0,255,0.2)";
 			//ctx.fillStyle= "rgb(" + map(o.a, 0,20, 0,255)  + "," + map(o.a, 0,20, 0,255)  + "," + map(o.a, 0,20, 0,255)  + ")";
