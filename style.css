@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+}#wrapper{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+#wrapper > canvas{
+	background-color:  #000;
+
+}
+#fps{
+	width: 30px;
+}
+#tacos{
+	display: flex;
+	/*display: none;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,138,0,0.58) 0%, rgba(0,36,0,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,138,0,0.58) 0%,rgba(0,36,0,1) 100%);
+	background: radial-gradient(ellipse at center,  rgba(0,138,0,0.58) 0%,rgba(0,36,0,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94008a00', endColorstr='#002400',GradientType=1 ); 
+/*	box-shadow: inset rgba(0,55,0,1) 0 0 1500px 150px;*/
+	//animation: blink 0.1s steps(7, start) infinite;
+}
+#inner{
+	display: none;
+	padding: 70px 50px;
+	border: solid 2px #0f0f0f;
+	background-color: rgba(0,0,0,0.85);
+	color: #aaa;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.75) 0 0 230px 50px;
+	
+
+}
+
+.blinky{
+	animation: blink 1s steps(5,start) infinite;
+}
+@keyframes blink{
+	to{
+		visibility: hidden
+	}
+}
